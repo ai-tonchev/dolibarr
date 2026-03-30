@@ -20,5 +20,5 @@ $dolibarr_main_db_character_set = 'utf8';
 $dolibarr_main_db_collation = 'utf8_unicode_ci';
 
 // Authentication
-$dolibarr_main_authentication = 'googleoauth';
+$dolibarr_main_authentication = 'googleoauth,dolibarr';
 ?>
