@@ -29,6 +29,6 @@ primary_region = 'cdg'
 
 
 [env]
-  DOLI_DB_HOST = "fly-mariadb.internal"
+  DOLI_DB_HOST = "fly-mariadb.flycast"
   DOLI_DB_NAME = "dolibarr"
   DOLI_DB_USER = "dolibarr"
