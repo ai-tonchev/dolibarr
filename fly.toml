@@ -26,3 +26,9 @@ primary_region = 'iad'
 [mounts]
   source = "dolibarr_docs"
   destination = "/var/www/documents" # Verify this path matches your specific Dockerfile
+
+
+[env]
+  DOLI_DB_HOST = "doli-db.internal"
+  DOLI_DB_NAME = "dolibarr"
+  DOLI_DB_USER = "dolibarr"
