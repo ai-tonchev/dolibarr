@@ -4,7 +4,7 @@
 #
 
 app = 'dolibarr'
-primary_region = 'fra'
+primary_region = 'cdg'
 
 [build]
 
@@ -29,6 +29,6 @@ primary_region = 'fra'
 
 
 [env]
-  DOLI_DB_HOST = "doli-db.internal"
+  DOLI_DB_HOST = "fly-mariadb.internal"
   DOLI_DB_NAME = "dolibarr"
   DOLI_DB_USER = "dolibarr"
