@@ -17,6 +17,13 @@ RUN a2enmod rewrite
 # Copy Dolibarr's web directory (htdocs) to the Apache document root
 COPY htdocs/ /var/www/html/
 
+# ... after your other COPY commands
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Use the script to boot the container
+ENTRYPOINT ["entrypoint.sh"]
+
 # Create the documents directory and set permissions
 RUN mkdir -p /var/www/documents \
     && chown -R www-data:www-data /var/www/html/ /var/www/documents
